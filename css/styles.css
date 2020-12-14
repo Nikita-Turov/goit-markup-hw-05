@@ -662,8 +662,8 @@ footer > li > .address-contact {
   letter-spacing: 0.03em;
 }
 
-.portfolio-list-item:hover .portfolio-link-descr,
-.portfolio-link:focus .portfolio-list-descr {
+.portfolio-link:hover .portfolio-link-descr,
+.portfolio-link:focus .portfolio-link-descr {
   transform: translateY(-100%);
 }
 
@@ -735,3 +735,49 @@ footer > li > .address-contact {
   color: var(--second-color);
 }
 /* ==================== end portfolio main ========= */
+
+/* ==================== modal btn ========= */
+.backdrop {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.order-btn-modal {
+  width: 528px;
+  min-height: 581px;
+  background-color: var(--white-color);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.close-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  width: 30px;
+  height: 30px;
+
+  border-radius: 50%;
+  background-color: var(--white-color);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  outline: none;
+  cursor: pointer;
+}
+
+.close-btn-x {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  fill: #000000;
+}
+/* ==================== end modal btn ========= */
