@@ -744,6 +744,8 @@ footer > li > .address-contact {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
+
+  transition: all 250ms var(--cubic);
 }
 
 .order-btn-modal {
@@ -753,7 +755,8 @@ footer > li > .address-contact {
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scale(1);
+  transition: all 250ms var(--cubic) 250ms;
 }
 
 .close-btn {
@@ -779,5 +782,20 @@ footer > li > .address-contact {
   left: 50%;
   transform: translate(-50%, -50%);
   fill: #000000;
+}
+
+.backdrop.is-hidden {
+  transition: all 250ms var(--cubic) 250ms;
+}
+
+.backdrop.is-hidden .order-btn-modal {
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 250ms var(--cubic) 0ms;
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: none;
+  pointer-events: none;
 }
 /* ==================== end modal btn ========= */
