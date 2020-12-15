@@ -498,14 +498,14 @@ footer .logo {
   align-items: center;
   justify-content: center;
   color: var(--primary-color);
-  transition: color 250ms var(--cubic), fill 250ms var(--cubic),
-    border 250ms var(--cubic);
+  transition: border 2500ms var(--cubic);
 }
 
 .clients-list-icon {
   height: 50px;
   max-width: 90px;
   fill: currentColor;
+  transition: fill 2500ms var(--cubic);
 }
 
 .clients-list-link:hover .clients-list-icon,
